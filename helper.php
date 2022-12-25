@@ -11,7 +11,7 @@
  */
 class ModBulkaAddToCartHelper
 {
-    public function getAddtocart($nezarazeno)
+    public static function getAddtocart($nezarazeno)
   {
   	$clear_values=0;
 	$o=1;
@@ -67,7 +67,7 @@ return $urlcart;
 
   }
   
-    public function getControl()
+    public static function getControl()
   {
 	$return_values=array();
 	$q = 1;
@@ -84,7 +84,7 @@ return $urlcart;
 	return $return_values;  
  	}
  	
-    public function getClear()
+    public static function getClear()
 	{
 	  if (!empty($_POST['zrus']))
 	  	{
